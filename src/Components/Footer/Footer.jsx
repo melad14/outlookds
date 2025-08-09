@@ -29,11 +29,11 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <h4 className="text-white mb-4">Quick Links</h4>
-              <Link to="#"><i className="fas fa-angle-right me-2"></i> About</Link>
-              <Link to="#"><i className="fas fa-angle-right me-2"></i> services</Link>
-              <Link to="#"><i className="fas fa-angle-right me-2"></i> core value</Link>
+              <Link to="/about"><i className="fas fa-angle-right me-2"></i> About</Link>
+              <Link to="/services"><i className="fas fa-angle-right me-2"></i> services</Link>
+              <Link to="/about"><i className="fas fa-angle-right me-2"></i> core value</Link>
 
-              <Link to="#"><i className="fas fa-angle-right me-2"></i> Contact us</Link>
+              <Link to="contact"><i className="fas fa-angle-right me-2"></i> Contact us</Link>
             </div>
           </div>
 
@@ -42,16 +42,16 @@ const Footer = () => {
             <div className="footer-item d-flex flex-column">
               <h4 className="text-white mb-4">Business Hours</h4>
               <div className="mb-3">
-                <h6 className="text-muted mb-0">Mon - Friday:</h6>
+                <h6 className="text-muted mb-0"> sat- Thursday:</h6>
                 <p className="text-white mb-0">09.00 am to 07.00 pm</p>
               </div>
               <div className="mb-3">
-                <h6 className="text-muted mb-0">Saturday:</h6>
+                <h6 className="text-muted mb-0">Thursday:</h6>
                 <p className="text-white mb-0">10.00 am to 05.00 pm</p>
               </div>
               <div className="mb-3">
                 <h6 className="text-muted mb-0">Vacation:</h6>
-                <p className="text-white mb-0">All Sunday is our vacation</p>
+                <p className="text-white mb-0">All friday is our vacation</p>
               </div>
             </div>
           </div>
@@ -60,14 +60,14 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <h4 className="text-white mb-4">Contact Info</h4>
-              <a href="#"><i className="fa fa-map-marker-alt me-2"></i> july 23 abrove al-tawhid ,al-nour , seventh
+              <a href=""><i className="fa fa-map-marker-alt me-2"></i> july 23 abrove al-tawhid ,al-nour , seventh
                 floor- Bani-suef
               </a>
-              <a href="mailto:info@example.com"><i className="fas fa-envelope me-2"></i>
+              <a href=""><i className="fas fa-envelope me-2"></i>
                 contact@outlookds.com</a>
-              <a href="tel:+012 345 67890"><i className="fas fa-phone me-2"></i>01205450008
+              <a href=""><i className="fas fa-phone me-2"></i>01205450008
               </a>
-              <a href="tel:+012 345 67890" className="mb-3"><i className="fas fa-print me-2"></i>
+              <a href="" className="mb-3"><i className="fas fa-print me-2"></i>
                 www.outlookds.com</a>
               <div className="d-flex">
                 <a className="btn btn-secondary btn-md-square rounded-circle me-3" href="">

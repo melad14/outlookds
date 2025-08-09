@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap");
 
 /*** Spinner Start ***/
-/*** Spinner ***/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.2S ease-in-out;
+  font-family: "Titillium Web", sans-serif;
+}
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -258,7 +265,7 @@
     background: linear-gradient(rgba(31, 46, 78, 1), rgba(0, 12, 33, 0.8)), url(./img/fact-bg.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 60px 0 60px 0;
     transition: 0.5s;
 }

@@ -25,14 +25,13 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav mx-auto py-0">
           <Link to="" className="nav-item nav-link active">Home</Link>
-          <Link to="" className="nav-item nav-link">About</Link>
-          <Link to="" className="nav-item nav-link">Service</Link>
-          <Link to="" className="nav-item nav-link">products</Link>
+          <Link to="about" className="nav-item nav-link">About</Link>
+          <Link to="service" className="nav-item nav-link">Service</Link>
           
           
-          <Link to="contact.html" className="nav-item nav-link">Contact</Link>
+          <Link to="contact" className="nav-item nav-link">Contact</Link>
         </div>
-        <Link to="" className="btn btn-primary rounded-pill py-2 px-4">
+        <Link to="/contact" className="btn btn-primary rounded-pill py-2 px-4">
           Get Started
         </Link>
       </div>
