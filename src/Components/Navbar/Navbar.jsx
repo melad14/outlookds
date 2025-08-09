@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light">
       <Link to="" className="navbar-brand p-0">
         <h1 className="display-6 text-primary">
-    Outlook ds
+      OUTLOOK <span className='fs-6 text-dark text-muted'>S</span>
         </h1>
         {/* <img src="img/logo.png" alt="Logo"> */}
       </Link>
