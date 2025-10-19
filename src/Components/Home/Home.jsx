@@ -4,7 +4,7 @@ import aboutIcon2 from '../../img/about-icon-2.png';
 import aboutImg from '../../img/about-img.jpg';
 import aboutImg1 from '../../img/about-img-1.jpg';
 import feat from "../../img/features-img.png"
-import carsol2 from "../../img/carousel-2.jpg"
+import carsol2 from "../../img/homebg.jpg"
 import why from '../../img/why.jpg';
 
 import Aos from 'aos'
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="carousel-item active">
             <img
               src={carsol2}
-              className="img-fluid w-100"
+              className="img-fluid w-100 h-100"
               alt="First slide"
             />
             <div className="carousel-caption">
@@ -47,7 +47,7 @@ export default function Home() {
 
                   {/* Promo Text Column */}
                   <div
-                    className="col-lg-6 d-none d-lg-flex "
+                className="col-lg-6 col-md-8 col-sm-10 mx-auto text-center" // Made it responsive
                     data-aos="fade-left" data-aos-delay="2000"
                   >
 
@@ -91,7 +91,7 @@ export default function Home() {
                     <div className="about-icon mb-4">
                       <img src={aboutIcon1} className="img-fluid w-50 h-50" alt="Vision Icon" />
                     </div>
-                    <h5 className="mb-3">Our Vision</h5>
+                    <h5 className="mb-3 ">Our Vision</h5>
                     <p className="mb-0">To be a trusted partner in digital
                       transformation, empowering businesses and
                       educational institutions with innovative
@@ -116,7 +116,7 @@ export default function Home() {
               {/* Experience & Features */}
               <div className="row g-4">
                 <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                  <div className="text-center rounded bg-secondary p-4">
+                  <div className="text-center rounded p-4">
                     <h1 className="display-6 text-white">17</h1>
                     <h5 className="text-light mb-0">Years Of Experience</h5>
                   </div>
@@ -164,18 +164,18 @@ export default function Home() {
     </div>
     {/* About End */}
     {/* Why Choose Us Section */}
-    <div className="container-fluid py-5 bg-light">
+    <div className="container-fluid py-5 ">
       <div className="container py-5">
         <div className="row g-5 align-items-center">
           <div className="col-lg-6" data-aos="fade-right">
             <div className="mb-4">
               <h1 className="display-5 text-capitalize mb-4">
-                <span className="text-primary">Why Choose</span> Us?
+                <span className="text-primary">Why Choose Us?</span> 
               </h1>
             </div>
             <div className="row g-4">
               <div className="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div className="bg-white p-4 rounded shadow">
+                <div className=" p-4 rounded shadow">
                   <h5 className="mb-3">Expertise</h5>
                   <p className="mb-0">
                     A team of experienced professionals dedicated to providing top-notch solutions.
@@ -183,7 +183,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div className="bg-white p-4 rounded shadow">
+                <div className=" p-4 rounded shadow">
                   <h5 className="mb-3">Customer-Centric Approach</h5>
                   <p className="mb-0">
                     We prioritize our clients' needs and work closely to deliver customized solutions.
@@ -191,7 +191,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="bg-white p-4 rounded shadow">
+                <div className=" p-4 rounded shadow">
                   <h5 className="mb-3">Innovation</h5>
                   <p className="mb-0">
                     Constantly exploring the latest technologies to provide cutting-edge products.
@@ -199,7 +199,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div className="bg-white p-4 rounded shadow">
+                <div className=" p-4 rounded shadow">
                   <h5 className="mb-3">Quality Assurance</h5>
                   <p className="mb-0">
                     Rigorous testing and quality control measures to ensure reliable performance.
@@ -231,7 +231,7 @@ export default function Home() {
           data-aos-delay="100"
           style={{ maxWidth: "800px" }}
         >
-          <h1 className="display-5 text-capitalize mb-3">Outlook ds <span className="text-primary">CORE VALUES
+          <h1 className="display-5 text-capitalize mb-3"><span className="text-primary">Outlook ds CORE VALUES
           </span></h1>
 
         </div>
@@ -312,7 +312,7 @@ export default function Home() {
 
     {/* fact start */}
 
-    <div className="container-fluid counter bg-secondary py-5">
+    <div className="container-fluid counter  py-5">
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
@@ -510,7 +510,7 @@ export default function Home() {
 
           {/* Second Column - Contact Form */}
           <div className="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="bg-secondary p-5 rounded">
+            <div className=" p-5 rounded">
               <h4 className="text-primary mb-4">Send Your Message</h4>
               <form>
                 <div className="row g-4">

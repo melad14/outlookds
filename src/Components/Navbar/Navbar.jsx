@@ -8,10 +8,9 @@ export default function Navbar() {
    <div className=" nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
   <div className="container">
     <nav className="navbar navbar-expand-lg navbar-light">
-      <Link to="" className="navbar-brand p-0">
-   
-   <img src={logo} className='logoo' alt="Logo"/>       
-     
+      <Link to="" className="navbar-brand p-0 text-primary display-6">
+   {/* <img src={logo} className='logoo' alt="Logo"/>   */}
+   Outlook     
       </Link>
       <button 
         className="navbar-toggler" 
@@ -23,7 +22,7 @@ export default function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav mx-auto py-0">
-          <Link to="" className="nav-item nav-link active">Home</Link>
+          <Link to="" className="nav-item nav-link ">Home</Link>
           <Link to="about" className="nav-item nav-link">About</Link>
           <Link to="service" className="nav-item nav-link">Service</Link>
           

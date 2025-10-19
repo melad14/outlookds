@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap");
 
+/*** Dark Mode Variables Start ***/
+:root {
+  --bs-dark-bg: #0f172a;
+  --bs-dark-card: #1e293b;
+  --bs-dark-text: #e2e8f0;
+  --bs-dark-border: #334155;
+  --bs-dark-hover: #2d3748;
+  --bs-white: #ffffff;
+  --bs-primary: #007bff;
+  --bs-secondary: #6c757d;
+  --bs-danger: #dc3545;
+  --bs-dark: #343a40;
+  --bs-body: #6c757d;
+  --bs-light: #1e293b;
+}
+
+body {
+  background-color: var(--bs-dark-bg) !important;
+  color: var(--bs-dark-text);
+}
+/*** Dark Mode Variables End ***/
+
 /*** Spinner Start ***/
 * {
   padding: 0;
@@ -118,7 +140,7 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: var(--bs-white);
+    background: var(--bs-dark-card);
 }
 
 .sticky-top {
@@ -130,7 +152,7 @@
     margin-right: 25px;
     padding: 35px 0;
     letter-spacing: 1px;
-    color: var(--bs-dark);
+    color: var(--bs-dark-text);
     font-size: 17px;
     font-weight: 500;
     outline: none;
@@ -139,7 +161,7 @@
 
 .sticky-top .navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--bs-dark);
+    color: var(--bs-dark-text);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -174,12 +196,10 @@
     transform: rotateX(0deg);
     visibility: visible;
     margin-top: 8px !important;
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
     transition: .5s;
     opacity: 1;
 }
-
-
 
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -208,16 +228,20 @@
     }
 }
 /*** Navbar End ***/
-
 /*** Carousel Header Start ***/
 .carousel .carousel-item img {
     object-fit: cover;
-    
+    width: 100%;
 }
 
-.carousel .carousel-item,
+.carousel .carousel-item {
+    position: relative;
+}
+
 .carousel .carousel-item img {
-    height: 800px;
+    height: 100vh; /* Use viewport height instead of fixed pixels */
+    min-height: 500px; /* Minimum height for smaller screens */
+    max-height: 800px; /* Maximum height for larger screens */
 }
 
 .carousel-item .carousel-caption {
@@ -229,9 +253,8 @@
     background: rgba(0, 0, 0, .3);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-
-
 
 .carousel-indicators [data-bs-target] {
     display: flex;
@@ -240,8 +263,8 @@
     border: 6px solid var(--bs-white);
     border-radius: 15px;
     padding: 0;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: var(--bs-secondary);
     opacity: 1;
     transition: 0.5s;
@@ -251,13 +274,36 @@
     background-color: var(--bs-primary);
 }
 
+/* Responsive adjustments */
 @media (max-width: 992px) {
     .carousel-indicators [data-bs-target] {
         display: none;
     }
+    
+    .carousel .carousel-item img {
+        height: 70vh; /* Smaller height on tablets */
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel .carousel-item img {
+        height: 60vh; /* Even smaller height on mobile */
+        min-height: 300px;
+    }
+    
+    .carousel-item .carousel-caption {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel .carousel-item img {
+        height: 50vh; /* Mobile height */
+        min-height: 250px;
+    }
 }
 /*** Carousel Header End ***/
-
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
     position: relative;
@@ -281,7 +327,7 @@
 
 /*** Features Start ***/
 .feature {
-    background: var(--bs-light);
+    background: var(--bs-dark-bg);
 }
 
 .feature .feature-item {
@@ -316,7 +362,7 @@
     justify-content: center;
     text-align: center;
     border-radius: 10px;
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
     transition: 0.5s;
 }
 
@@ -424,9 +470,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .3);
     border-radius: 10px;
-    background: var(--bs-white);
+    background: var(--bs-dark-card);
     transition: 0.5s;
 }
 
@@ -437,7 +483,7 @@
     justify-content: center;
     text-align: center;
     border-radius: 60px;
-    background: var(--bs-light);
+    background: var(--bs-dark-hover);
 }
 
 .service .service-item::after {
@@ -500,13 +546,13 @@
 }
 
 .categories .categories-item-inner .categories-img {
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
 }
 
 .categories .categories-item-inner .categories-content {
-    border-top: 4px solid var(--bs-white);
+    border-top: 4px solid var(--bs-dark-border);
     text-align: center;
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
 }
 
 .categories .categories-item-inner .categories-review {
@@ -593,7 +639,7 @@
 }
 
 .blog .blog-item:hover {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 45px rgba(255, 255, 255, .1);
 }
 
 .blog .blog-item .blog-img {
@@ -628,7 +674,7 @@
 
 .blog .blog-item .blog-content {
     position: relative;
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
 }
 
 .blog .blog-item .blog-content .blog-date {
@@ -712,7 +758,7 @@
     text-align: center;
     border-radius: 10px;
     margin-top: 100px;
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
     transition: 0.5s;
     z-index: 1;
 }
@@ -794,7 +840,7 @@
 .testimonial .testimonial-item {
     position: relative;
     margin-top: 35px;
-    border: 1px solid var(--bs-secondary);
+    border: 1px solid var(--bs-dark-border);
     border-radius: 10px;
 }
 
@@ -816,7 +862,7 @@
 .testimonial .testimonial-item .testimonial-inner {
     display: flex;
     align-items: center;
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -891,7 +937,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--bs-light);
+    background: var(--bs-dark-card);
 }
 
 .contact .contact-add-item .contact-icon {
@@ -916,7 +962,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--bs-dark);
+    background: #111827;
 }
 
 .footer .footer-item a {
@@ -951,10 +997,36 @@
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark);
+    background: #111827;
 }
 /*** copyright end ***/
-/* 
-.logo{
-    width: 100px !important;
-} */
+
+/* Text color utilities for dark mode */
+.text-dark {
+    color: var(--bs-dark-text) !important;
+}
+
+.bg-light {
+    background-color: var(--bs-dark-card) !important;
+}
+
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+/* Table styles for dark mode */
+.table {
+    color: var(--bs-dark-text);
+}
+
+.table-light {
+    background-color: var(--bs-dark-card);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--bs-dark-hover);
+    color: var(--bs-dark-text);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #616baf !important;
+}
