@@ -12,8 +12,6 @@ import AudioSystems from './Components/Pages/AudioSystems.jsx';
 import LedScreens from './Components/Pages/LedScreens.jsx';
 import Services from './Components/Services/Services.jsx';
 
-
-
 function App() {
   return (
     <Router>

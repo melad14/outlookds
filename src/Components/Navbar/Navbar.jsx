@@ -1,18 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import logo from "../../img/logo.png"
 
 export default function Navbar() {
 
   return <>
-   <div className="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+   <div className=" nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
   <div className="container">
     <nav className="navbar navbar-expand-lg navbar-light">
       <Link to="" className="navbar-brand p-0">
-        <h1 className="display-6 text-primary">
-      OUTLOOK <span className='fs-6 text-dark text-muted'>S</span>
-        </h1>
-        {/* <img src="img/logo.png" alt="Logo"> */}
+   
+   <img src={logo} className='logoo' alt="Logo"/>       
+     
       </Link>
       <button 
         className="navbar-toggler" 

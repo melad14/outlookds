@@ -4,7 +4,7 @@ import aboutIcon2 from '../../img/about-icon-2.png';
 import aboutImg from '../../img/about-img.jpg';
 import aboutImg1 from '../../img/about-img-1.jpg';
 import feat from "../../img/features-img.png"
-import carsol2 from "../../img/home.jpg"
+import carsol2 from "../../img/carousel-2.jpg"
 import why from '../../img/why.jpg';
 
 import Aos from 'aos'
