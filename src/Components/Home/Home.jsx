@@ -70,58 +70,23 @@ export default function Home() {
 {/* Video Hero Section */}
       <div className="video-hero-section">
         {/* Background Video */}
-        <video 
-          autoPlay 
-          
-          loop 
-          className="hero-video"
-        >
-          <source src="/videos/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+  <video 
+  autoPlay 
+  muted 
+  loop 
+  playsInline
+  className="hero-video"
+  onError={(e) => console.error('Video failed to load:', e)}
+>
+  <source src="/videos/video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
         
         {/* Dark Overlay */}
         <div className="video-overlay"></div>
         
         {/* Content */}
-        <div className="hero-content-container">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-8 col-md-10 col-12 text-center">
-                <div className="hero-main-content">
-           
-                  
-                  {/* Animated Service Display */}
-                  <div className="service-display-wrapper">
-                    <div 
-                      className="animated-service-item"
-                      key={currentService}
-                    >
-                      <div className="service-icon-large">
-                        <i className={`${services[currentService].icon}`}></i>
-                      </div>
-                      <h3 className="service-title">{services[currentService].title}</h3>
-                      <p className="service-description">{services[currentService].desc}</p>
-                      
-                      {/* Progress Dots */}
-                      <div className="progress-dots-container">
-                        {services.map((_, index) => (
-                          <div
-                            key={index}
-                            className={`progress-dot ${index === currentService ? 'active' : ''}`}
-                            onClick={() => setCurrentService(index)}
-                          ></div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  
-               
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      
       </div>
 
     {/* About Start */}
