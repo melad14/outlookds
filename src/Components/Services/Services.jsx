@@ -21,7 +21,7 @@ export default function Services() {
     {/* servces start */}
 
    <div className="container-fluid service py-5">
-      <div className="container py-5">
+      <div className="container-fluid py-5">
         <div className="text-center mx-auto pb-5" style={{ maxWidth: '800px' }}>
           <h1 className="display-5 text-capitalize mb-3">Our <span className="text-primary">Services</span></h1>
           <p className="mb-0 lead">
