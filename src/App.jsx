@@ -6,11 +6,9 @@ import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Layout from './Components/Layout/Layout';
 import About from './Components/About/About.jsx';
 import Contact from './Components/Contact/Contact.jsx';
-import Interactive from './Components/Pages/Interactive.jsx';
-import DigitalServices from './Components/Pages/DigitalServices.jsx';
-import AudioSystems from './Components/Pages/AudioSystems.jsx';
-import LedScreens from './Components/Pages/LedScreens.jsx';
+
 import Services from './Components/Services/Services.jsx';
+import Products from './Components/Products/Products.jsx';
 
 function App() {
   return (
@@ -22,10 +20,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="service" element={<Services />} />
-          <Route path="interactive" element={<Interactive />} />
-          <Route path="DigitalServices" element={<DigitalServices />} />
-          <Route path="AudioSystems" element={<AudioSystems />} />
-          <Route path="LedScreens" element={<LedScreens />} />
+          <Route path="products" element={<Products />} />
+        
      
           
         </Route>

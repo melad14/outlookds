@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from "../../img/logo.png"
+import logo from "../../img/logo2.png"
 
 export default function Navbar() {
 
@@ -8,9 +8,8 @@ export default function Navbar() {
    <div className=" nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
   <div className="container">
     <nav className="navbar navbar-expand-lg navbar-light">
-      <Link to="" className="navbar-brand p-0 text-primary display-6">
-   {/* <img src={logo} className='logoo' alt="Logo"/>   */}
-   Outlook     
+      <Link to="" className="navbar-brand p-0 text-primary">
+   <img src={logo} className='w-100' alt="Logo"/>  
       </Link>
       <button 
         className="navbar-toggler" 
@@ -22,12 +21,28 @@ export default function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav mx-auto py-0">
-          <Link to="" className="nav-item nav-link ">Home</Link>
-          <Link to="about" className="nav-item nav-link">About</Link>
-          <Link to="service" className="nav-item nav-link">Service</Link>
+          <Link to="" className="nav-item nav-link text-light ">Home</Link>
+          <Link to="about" className="nav-item nav-link text-light">About</Link>
+          <Link to="products" className="nav-item nav-link text-light">Products</Link>
+          <Link to="service" className="nav-item nav-link text-light">Service</Link>
           
-          
-          <Link to="contact" className="nav-item nav-link">Contact</Link>
+    
+          {/* Company Dropdown */}
+          <div className="nav-item dropdown">
+            <Link 
+              to="#" 
+              className="nav-link dropdown-toggle text-light" 
+              data-bs-toggle="dropdown"
+            >
+              Company
+            </Link>
+            <div className="dropdown-menu m-0 bg-light">
+              <Link to="Partnerships" className="dropdown-item">Partnerships</Link>
+              <Link to="futureplans" className="dropdown-item">future plans</Link>
+            </div>
+          </div>
+
+          <Link to="contact" className="nav-item nav-link text-light">Contact</Link>
         </div>
         <Link to="/contact" className="btn btn-primary rounded-pill py-2 px-4">
           Get Started
