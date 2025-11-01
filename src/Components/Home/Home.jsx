@@ -72,7 +72,7 @@ export default function Home() {
         {/* Background Video */}
   <video 
   autoPlay 
-  muted 
+ 
   loop 
   playsInline
   className="hero-video"
