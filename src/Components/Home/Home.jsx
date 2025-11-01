@@ -187,7 +187,7 @@ export default function Home() {
     </div>
     {/* About End */}
     {/* company fields */}
-    <div className="image-gallery-container">
+   <div className="image-gallery-container">
       <div className="gallery-header ">
         <h2 
           className="gallery-title"
@@ -211,7 +211,7 @@ Company fields        </h2>
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <div className="image-prodd">
+            <div className="image-card">
               <img 
                 src={image} 
                 alt={`Gallery image ${index + 1}`}
